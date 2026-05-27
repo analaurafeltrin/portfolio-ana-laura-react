@@ -1,0 +1,99 @@
+#contactSection {
+  background-color: #ab7bcc;
+  display: flex;
+  justify-content: center;
+
+  #contactTextsContainer {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+
+    h1 {
+      color: var(--white-color);
+      padding-bottom: 60px;
+    }
+
+    p {
+      color: var(--white-color);
+      font-size: 1.56rem;
+      max-width: 70%;
+      margin-bottom: 30px;
+    }
+
+    #contactTextsChild {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  }
+
+  #contactPhoto {
+    background-image: url(../../assets/images/fourthPicture.jpg);
+    background-size: cover;
+    background-position: center 12%;
+    width: 50vw;
+  }
+}
+
+@media (orientation: portrait) {
+  #contactSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #contactPhoto {
+      height: 30vh;
+      width: 100%;
+      border-radius: 50%;
+      margin-top: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    #contactTextsContainer {
+      flex-direction: column;
+      text-align: justify;
+      width: 50vh;
+      padding: 1rem;
+    }
+  }
+
+  .contactItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  p {
+    padding-left: 10px;
+    padding-top: 27px;
+    line-height: 0.5;
+    text-align: left;
+  }
+}

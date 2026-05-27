@@ -1,0 +1,39 @@
+#skillsSection {
+  background-image: url(../../assets/images/thirdPicture.jpg);
+  background-size: cover;
+  background-position: center 55%;
+
+  .overlay {
+    background-color: #ffffff80;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  h1 {
+    color: #a65161;
+    padding-bottom: 40px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+
+  li {
+    background-color: #f2b8a240;
+    color: #000000;
+    padding: 12px 17px;
+    display: flex;
+    border-radius: var(--border-radius-base);
+    font-size: 1.5rem;
+  }
+}

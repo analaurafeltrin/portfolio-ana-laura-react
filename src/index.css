@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #3c3c3c;
+  --white-color: #ffffff;
+  --darker-background: #222222;
+  --border-radius-base: 8px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+section {
+  min-height: 100vh;
+}
+
+p {
+  line-height: 2.8rem;
+}
+
+h1 {
+  color: var(--white-color);
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (orientation: portrait) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}

@@ -1,0 +1,53 @@
+#aboutMeSection {
+  background-color: #0230ba;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  #aboutMePhoto {
+    background-image: url(../../assets/images/secondPicture.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40vw;
+  }
+
+  #aboutMeTextsFlexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+
+    #aboutMeTextsFlexItem {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+  }
+
+  p {
+    color: var(--white-color);
+    font-size: 1.75rem;
+    padding: 45px 0 56px 0;
+  }
+}
+
+@media (orientation: portrait) {
+  #aboutMeSection {
+    padding: 2.5rem 1.8rem;
+    min-height: auto;
+
+    #aboutMeTextsFlexContainer {
+      width: 100vw;
+
+      #aboutMeTextsFlexItem {
+        text-align: center;
+        width: 90%;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #aboutMePhoto {
+    display: none;
+  }
+}

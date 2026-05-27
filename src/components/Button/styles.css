@@ -1,0 +1,182 @@
+.defaultButton {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 14px;
+  color: var(--white-color);
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.linkedinButton {
+  background-color: #333333;
+  height: 30px;
+
+  img {
+    height: 30px;
+  }
+
+  a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: #05aff2;
+    }
+    &:focus {
+      background-color: #b0b0b0;
+    }
+  }
+}
+
+.socialWrapper {
+  width: 100%;
+  display: block;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.socialButton {
+  background-color: #684b7b30;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.socialButton a {
+  padding: 8px;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.socialButton img {
+  height: 22px;
+  width: auto;
+}
+
+.downloadButtonBlue {
+  background-color: #46539f;
+
+  img {
+    height: 17px;
+  }
+
+  a {
+    padding-left: 11px;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: #1a2b41;
+    }
+    &:focus {
+      background-color: #6089bf;
+    }
+  }
+}
+
+.projectButton {
+  background-color: #c3512f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: var(--border-radius-base);
+  padding: 10px 20px;
+  width: fit-content;
+
+  a {
+    color: var(--white-color);
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    &:hover {
+      color: #421e13;
+    }
+    &:focus {
+      background-color: #e89278;
+    }
+  }
+
+  img {
+    height: 24px;
+    width: auto;
+    display: block;
+  }
+}
+
+#buttonSeeOthers {
+  display: none;
+}
+
+.downloadButtonPurple {
+  background-color: #a65161;
+
+  img {
+    height: 17px;
+  }
+
+  a {
+    padding-left: 11px;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: #f2b8a2;
+    }
+    &:focus {
+      background-color: #da798b;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .linkedinButton {
+    font-size: 1rem;
+  }
+
+  .socialButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.8rem 0px 1.8rem;
+  }
+
+  #buttonSeeOthers {
+    display: block;
+    width: 50%;
+    max-width: 350px;
+    margin: auto;
+    background-color: #b0b0b0;
+    color: #000000;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius-base);
+    cursor: pointer;
+    text-align: center;
+  }
+}
