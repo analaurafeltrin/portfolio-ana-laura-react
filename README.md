@@ -42,8 +42,8 @@ O site é dividido em 5 seções: **Início**, **Sobre mim**, **Skills**, **Proj
 
 ## 🚧 Ainda precisa ser feito
 
-- [ ] Atualizar o currículo com foco na área de desenvolvimento
-- [ ] Atualizar a seção de projetos com os trabalhos mais recentes
+- [X] Atualizar o currículo com foco na área de desenvolvimento
+- [X] Atualizar a seção de projetos com os trabalhos mais recentes
 
 ---
 

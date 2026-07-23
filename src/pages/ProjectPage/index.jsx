@@ -1,16 +1,16 @@
-import { useState, useEffect } from 'react';
-import Button from '../../components/Button';
-import './styles.css';
+import { useState, useEffect } from 'react'
+import Button from '../../components/Button'
+import './styles.css'
 
 const ProjectPage = () => {
-  const [mostrarTudo, setMostrarTudo] = useState(false);
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
+  const [mostrarTudo, setMostrarTudo] = useState(false)
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768)
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+    const handleResize = () => setIsMobile(window.innerWidth <= 768)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <section id='projectsSection'>
@@ -22,25 +22,69 @@ const ProjectPage = () => {
         aria-live='polite'
       >
         <div className='projectContainer'>
-          <h2>
-            To Do List: <i>Kindle</i>
-          </h2>
+          <h2>Aniversário de Namoro</h2>
           <p>
-            Nesse projeto, desenvolvi um site estilo 'To Do List' focado em
-            livros. Nele, o usuário pode adicionar títulos de interesse à sua
-            estante virtual, marcar o progresso de leitura, avaliar as obras ou
-            removê-las da lista. Para a construção, utilizei as tecnologias HTML
-            e CSS e a linguagem JavaScript.
+            Nesse projeto, desenvolvi um site para estudo próprio, com intuito
+            de fazer uma página para comemorar meu aniversário de namoro. O foco
+            principal foi criar uma interface afetiva, fluida e responsiva,
+            garantindo que a surpresa funcionasse perfeitamente tanto no
+            computador quanto no celular.
           </p>
           <Button
             buttonType='projects'
-            url='https://analaurafeltrin.github.io/projeto-to-do-list-kindle/'
+            url='https://github.com/analaurafeltrin/projeto-aniversario-namoro'
             text='Ver no GitHub'
           />
         </div>
 
         {(!isMobile || mostrarTudo) && (
           <>
+            <div className='projectContainer'>
+              <h2>Homem Aranha: Multiverso</h2>
+              <p>
+                Nesse projeto, desenvolvi um site interativo e animado,
+                desenvolvido com HTML5, CSS3 e JavaScript puro (Vanilla JS). O
+                objetivo principal foi aprender e praticar técnicas de animação
+                web, manipulação do DOM e a integração de componentes visuais
+                imersivos, como galerias de mídia.
+              </p>
+              <Button
+                buttonType='projects'
+                url='https://github.com/analaurafeltrin/projeto-spiderman-multiverse'
+                text='Ver no GitHub'
+              />
+            </div>
+
+            <div className='projectContainer'>
+              <h2>PlanejAI</h2>
+              <p>
+                Nesse projeto, desenvolvi uma aplicação web de planejamento
+                financeiro pessoal, feita para ajudar usuários a organizarem
+                suas finanças de forma prática, direta e inteligente. Com base
+                nas informações fornecidas pelo usuário, a aplicação utiliza IA
+                para traçar caminhos e metas realistas de forma instantânea.
+              </p>
+              <Button
+                buttonType='projects'
+                url='https://github.com/analaurafeltrin/planejai'
+                text='Ver no GitHub'
+              />
+            </div>
+
+            <div className='projectContainer'>
+              <h2>
+                To Do List: <i>Kindle</i>
+              </h2>
+              <p>
+                Nesse projeto, desenvolvi um site estilo 'To Do List' focado em
+                livros. Nele, o usuário pode adicionar títulos de interesse à
+                sua estante virtual, marcar o progresso de leitura, avaliar as
+                obras ou removê-las da lista. Para a construção, utilizei as
+                tecnologias HTML e CSS e a linguagem JavaScript.
+              </p>
+              <Button buttonType='projects' url='z' text='Ver no GitHub' />
+            </div>
+
             <div className='projectContainer'>
               <h2>Pokedex</h2>
               <p>
@@ -70,17 +114,6 @@ const ProjectPage = () => {
                 text='Ver no GitHub'
               />
             </div>
-
-            <div className='projectContainer'>
-              <h2>Lorem4</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus sunt alias fuga illo laudantium similique,
-                consequatur officia neque aliquid commodi vitae, repudiandae
-                harum dicta cumque voluptatem ex facilis labore! Modi..
-              </p>
-              <Button buttonType='projects' url='z' text='Ver no GitHub' />
-            </div>
           </>
         )}
       </div>
@@ -91,7 +124,7 @@ const ProjectPage = () => {
         </button>
       )}
     </section>
-  );
-};
+  )
+}
 
-export default ProjectPage;
+export default ProjectPage
