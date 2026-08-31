@@ -10,6 +10,7 @@ const SkillsPage = () => (
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>Python</li>
         <li>ReactJS</li>
         <li>Git</li>
         <li>GitHub</li>
